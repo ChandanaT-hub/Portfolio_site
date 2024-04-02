@@ -1,0 +1,29 @@
+.input{
+    display: block; 
+padding: 0.625rem; 
+margin-left: 2.5rem; 
+background-color: #F9FAFB; 
+color: #111827; 
+font-size: 0.875rem;
+line-height: 1.25rem; 
+width: 50%; 
+border-radius: 0.5rem; 
+border-width: 1px; 
+border-color: #D1D5DB; 
+margin-left: 400px;
+}
+
+.size{
+    
+    height: 10px;
+    width: 10px;
+    margin-left: 400px;
+}
+.btn{
+    height: 30px;
+    border-radius: 1rem;
+    width: 180px;
+    background-color: blue;
+    color: wheat;
+    margin-left: 400px;
+}

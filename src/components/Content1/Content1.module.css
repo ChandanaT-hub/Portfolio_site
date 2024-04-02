@@ -1,0 +1,219 @@
+.content{
+    margin-top: 100px;
+    gap: 12.25rem;
+    color: white;
+    display: flex;
+  }
+  .con{
+    width: 900px;
+height: 400px;
+ margin-left: 200px;
+margin-right: 200px;
+-webkit-box-shadow:0 8px 6px -6px black ;
+-moz-box-shadow:0 8px 6px -6px black;
+box-shadow: 0 8px 6px -6px rgb(36, 35, 35);
+  }
+  .content p{
+    width:500px;
+  font-size:small;
+  }
+  .content span{
+    color:rgb(182, 34, 98);
+  }
+  
+  .span{
+  color:rgb(182, 34, 98);
+  }
+.c1{
+  display: block;
+  }
+  .images{
+    width: 35%;
+    height: 80%;
+    position:absolute;
+    bottom: 0;
+    right:160px;
+  }
+  .shape{
+    height: 300px;
+    width: 250px;
+    background-color: rgb(44, 43, 43);
+    border-radius: 5px;
+    box-shadow: -5px -5px 20px rgba(245, 243, 243, 0.1);
+    
+  }
+  .shape img{
+  width: 250px;
+  height: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+  padding: 5px;
+  }
+  
+  /* .flex-container{
+  background-color: rgb(44, 43, 43);
+  display: flex;
+  height: 300px;
+  width: 400px;
+  gap: 4.25rem;
+  background-color: rgb(44, 43, 43);
+  
+  } */
+  
+  .flex{
+  background-color: rgb(44, 43, 43);
+  display: flex;
+  height: 200px;
+  width: 800px;
+  }
+  .flexcontainer1{
+  margin-top: 30px;
+  background-color:  rgb(44, 43, 43);
+  display: flex;
+  height: 60px;
+  width: 160px;
+  gap: 1rem;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+  
+  }
+  .flexcontainer1 p{
+  font-size:small;
+  }
+  .container2{
+  background-color:  rgb(44, 43, 43);
+  display: flex;
+  height: 60px;
+  width: 140px;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  
+  }
+  .flex1{
+  display: flex;
+  height: 40px;
+  width: 35px;
+  padding: 10px;
+  background-color:rgb(44, 43, 43);
+  box-shadow: -5px -5px 15px rgba(245, 243, 243, 0.1);
+  }
+  .flex1{
+  align-items:center;
+  }
+  .main{
+  display: flex;
+  gap:4.25rem;
+  }
+  .flex-container21{
+  margin-left: 200px;
+  background-color: rgb(44, 43, 43);
+  height: 500px;
+  width: 800px;
+  gap: 2.25rem;
+  background-color: rgb(44, 43, 43);
+  }
+  .container2 h2{
+  color: white;
+  }
+  .images{
+    width: 35%;
+    margin-top: 60px;
+    height: 80%;
+    position:relative;
+    bottom: 0;
+    right:160px;
+  }
+  .shape{
+    height: 300px;
+    width: 250px;
+    background-color: rgb(44, 43, 43);
+    border-radius: 5px;
+    box-shadow: -5px -5px 20px rgba(245, 243, 243, 0.1);
+    
+  }
+  .shape img{
+  width: 250px;
+  height: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px;
+  }
+  .icon{
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+}
+@media(max-width:440px)
+{
+  .con{
+    margin-left: 200px;
+    
+  }
+  .c1{
+    display: inline;
+  }
+ 
+  /* .flex-container{
+    display: block;
+    margin-left: 50px;
+    margin-top: 350px;
+  } */
+  .flex{
+    margin-top: 0px;
+    background-color: rgb(44, 43, 43);
+    display: flex;
+    width: 800px;
+  }
+  .shape{
+    height: 300px;
+    width: 250px;
+    background-color:rgb(29, 28, 28);
+    margin-left: 0px;
+    float: left;
+} 
+.container2{
+  margin-top: 0px;
+}
+.images{
+  right: 200px;
+}
+}
+@media(max-width:1000px){
+  .con{
+    margin-left: 20px;
+  }
+  .c1{
+    display: inline;
+  }
+ 
+  .flexcontainer{
+    
+    display: block;
+  }
+  .content p{
+    width: 400px;
+  }
+  .flex{
+    margin-top: 0px;
+    background-color: rgb(44, 43, 43);
+    display: flex;
+    
+    width: 800px;
+  }
+  .shape{
+    height: 300px;
+    width: 250px;
+    background-color:rgb(29, 28, 28);
+    margin-left: 0px;
+    float: left;
+    
+} 
+.flexcontainer {
+  width: 200px;
+}
+}

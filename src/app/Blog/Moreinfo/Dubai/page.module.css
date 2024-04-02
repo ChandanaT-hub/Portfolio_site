@@ -1,0 +1,11 @@
+
+.slide{
+    border-radius: 1rem; 
+    width: 50%; 
+    height: 80%; 
+    background-size: cover; 
+    transition-duration: 500ms;
+    align-items: center; 
+    margin-left: 50px;
+    }
+    /* <div style={{backgroundImage:`url(${slides[0].url})`}} className='w-full h-full rounded-2xl bg-cover duration-500'></div> */

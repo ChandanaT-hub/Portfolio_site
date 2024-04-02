@@ -1,0 +1,9 @@
+.border{
+    border: 3px solid black;
+    margin: 350px;
+    margin-top:10px;
+    width: 800px;
+}
+.list{
+    margin-left: 220px;
+}
