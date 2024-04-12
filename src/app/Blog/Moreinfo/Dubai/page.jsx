@@ -4,6 +4,8 @@ import {BsChevronCompactLeft,BsChevronCompactRight} from 'react-icons/bs'
 import React, { useState} from "react";
 import I1 from "./Dubai-Miracle-Garden.jpg";
 import I2 from "./mg.jpg";
+
+import Footer from '@/components/Footer/page'
 const Dubai = () => {
 const[currentindex,setCurrentIndex]=useState(0);
 
@@ -68,10 +70,10 @@ const slides =[
         url:'https://thedesertsafaridubai.com/wp-content/uploads/2020/11/fire-show-in-dubai-desert.jpg',
       },]
   return (
-    
-    <div className="text-5xl w-full bg-white h-full text-center ">
+    <>
+    <div className=" text-5xl w-full h-full text-center text-white">
       DUBAI
-    <div className=' flex max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative'>
+    <div className={styles.div}>
     
             <div style={{ backgroundImage:`url(${slides[currentindex].url})`}} className={styles.slide} >
             <div className='absolute top-[35%] -translate-x-0 translate-y-[50%] left-20 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
@@ -80,8 +82,8 @@ const slides =[
             <div className='absolute top-[35%] -translate-x-0 translate-y-[50%] left-2/4 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                 <BsChevronCompactRight onClick={nextSlide} size={30} />
             </div>
-            <p className=' ml-[800px] text-3xl w-[400px]'>MIRACLE GARDEN</p><br></br>
-            <p className=' ml-[800px] text-sm w-[400px] h-[400px] justify-center '>
+            <p className= {styles.pheading}>MIRACLE GARDEN</p><br></br>
+            <p className={styles.para}>
                 
                 Dubai Miracle Garden is a breathtaking botanical wonder located in Dubai, UAE. 
         It was established in 2013 and is known as the world's largest natural flower garden. 
@@ -94,7 +96,7 @@ const slides =[
             floral creativity and splendour.</p>
     </div>
     </div>
-    <div className=' flex max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative'>
+    <div className={styles.div}>
     
             <div style={{ backgroundImage:`url(${slides1[currentindex].url})`}} className={styles.slide} >
             <div className='absolute top-[35%] -translate-x-0 translate-y-[50%] left-20 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
@@ -103,8 +105,8 @@ const slides =[
             <div className='absolute top-[35%] -translate-x-0 translate-y-[50%] left-2/4 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                 <BsChevronCompactRight onClick={nextSlide} size={30} />
             </div>
-            <p className=' ml-[800px] text-3xl w-[400px]'> GLOBAL VILLAGE</p><br></br>
-            <p className=' ml-[800px] text-sm w-[400px] h-[400px] justify-center '>
+            <p className={styles.pheading}> GLOBAL VILLAGE</p><br></br>
+            <p className={styles.para}>
                 Indulge in a global adventure with entertainment from around the world 
                 in nightly concerts and shows, featuring artists who create a mix of wonder, 
                 music and comedy at the World Culture Stage. While thrill-seekers can keep their
@@ -114,7 +116,7 @@ const slides =[
                  of Bosnian House and Floating Market, but it's a great spot to try something new every time you visit.</p>
     </div>
     </div>
-    <div className=' flex max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative'>
+    <div className={styles.div}>
     
             <div style={{ backgroundImage:`url(${slides2[currentindex].url})`}} className={styles.slide} >
             <div className='absolute top-[35%] -translate-x-0 translate-y-[50%] left-20 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
@@ -123,8 +125,8 @@ const slides =[
             <div className='absolute top-[35%] -translate-x-0 translate-y-[50%] left-2/4 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                 <BsChevronCompactRight onClick={nextSlide} size={30} />
             </div>
-            <p className=' ml-[800px] text-3xl w-[400px]'>DESERT SAFARI</p><br></br>
-            <p className=' ml-[800px] text-sm w-[400px] h-[400px] justify-center '>
+            <p className={styles.pheading}>DESERT SAFARI</p><br></br>
+            <p className={styles.para}>
             Embark on a thrilling Dubai Desert Safari, where 4x4 vehicles traverse majestic sand dunes, 
             offering heart-pounding dune bashing adventures. Witness a breathtaking sunset spectacle, 
             followed by a cultural immersion at a traditional desert camp. Enjoy Tanoura and fire dance 
@@ -135,16 +137,9 @@ const slides =[
               one exhilarating escapade.</p>
     </div>
     </div>
-   
-   
-         
-      
-        
-        
-      
-        
-    {/* </div> */}
     </div>
+    <Footer/>
+    </>
   );
 };
 

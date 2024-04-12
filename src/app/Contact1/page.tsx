@@ -6,16 +6,25 @@ import styles from './page.module.css'
 import { zodResolver } from '@hookform/resolvers/zod';
 
 type FormData = {
-  Name:string;
+  FirstName:string;
+  LastName:string;
   Email:string;
-  Question:String;
+  Message:String;
 };
 const Contact1 = () => {
   const schema:ZodType<FormData> = z
   .object({
-    Name:z.string().min(3).max(15),
-    Email:z.string().email(),
-    Question:z.string(),
+    FirstName:z.string()
+    .min(1,{message:" First Name is required"})
+    .max(9,{message:"String length too long"}),
+    LastName:z.string()
+    .min(3,{message:" Last Name is required"})
+    .max(9,{message:"String length upto 15 is accepted"}),
+    Email:z.string()
+    .min(1,{message:"Email is required"}).
+    email(),
+    Message:z
+    .string()
   });
 
   const { register, handleSubmit, 
@@ -27,26 +36,34 @@ const Contact1 = () => {
   }
   return (
     <>
-    <div className='w-full h-[750px] bg-white align-middle'>
-      <p className='text-5xl  text-black text-center'>Contact me</p>
+    <div className='w-full h-[750px] align-middle'>
+      <p className={styles.heading}>Contact me</p>
       
     <form className='align-center' onSubmit={handleSubmit(submitData)}>
-        <label className={styles.size}>Name</label><br></br>
+        <label className={styles.size}>First Name</label><br></br>
         <input className={styles.input}
-         {...register("Name",{required:true,})}  
-         type='text'  name="Name" placeholder='enter name'></input>
-        {errors.Name && <span className=' ml-[400px]  text-red-800 text-center'>{errors.Name.message}</span>}<br></br>
+         {...register("FirstName",{required:true,})}  
+         type='text'  name="FirstName" placeholder='Enter first name'></input>
+        {errors.FirstName && <span className=' ml-[400px]  text-pink-800 text-center'>{errors.FirstName.message}</span>}<br></br><br></br>
+
+        <label className={styles.size}>Last Name</label><br></br>
+        <input className={styles.input}
+         {...register("LastName",{required:true,})}  
+         type='text'  name="LastName" placeholder='Enter last name'></input>
+        {errors.LastName && <span className=' ml-[400px]  text-pink-800 text-center'>{errors.LastName.message}</span>}<br></br><br></br>
 
         <label className={styles.size}>Email</label><br></br>
         <input className={styles.input} 
         {...register("Email",
         {required:"email is required",})} 
-        type='email' name="Email"  placeholder='enter mailid'></input>
-        {errors.Email && <span className=' ml-[400px]  text-red-800 text-center'>{errors.Email.message}</span>}<br></br>
+        type='email' name="Email"  placeholder='Enter email'></input>
+        {errors.Email && <span className=' ml-[400px]  text-pink-800 text-center'>{errors.Email.message}</span>}<br></br><br></br>
 
-        <label className={styles.size}>Question</label><br></br>
-        <textarea className={styles.input} {...register("Question",{required:true})}  placeholder='enter your question'></textarea><br></br><br></br>
-        {errors.Question && <span className=' ml-[400px]  text-red-800 text-center'>{errors.Question.message}</span>}<br></br>
+        <label className={styles.size}>Message</label><br></br>
+        <textarea className={styles.input} 
+        {...register("Message",{required:true})}  
+        placeholder='Enter your message'></textarea><br></br><br></br>
+        {errors.Message && <span className=' ml-[400px]  text-pink-800 text-center'>{errors.Message.message}</span>}<br></br><br></br>
 
 
         <button className={styles.btn} >Submit </button>

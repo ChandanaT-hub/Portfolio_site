@@ -1,14 +1,11 @@
 
 .flexcontainer21{
-   
     color: white;
-    align-items: center;
-    justify-content: center;
     background-color: rgb(44, 43, 43);
-    height: 500px;
+    height: 700px;
     width: 1000px;
-    gap: 2.25rem;
     background-color: rgb(44, 43, 43);
+    
     }
     .flex-container21 h2{
     color: white;
@@ -16,6 +13,7 @@
     }
 .span{
         color:rgb(182, 34, 98);
+        margin-left: 80px;
         }
 .box{
     width: 230px;
@@ -25,7 +23,10 @@
     justify-content:left;
     padding: 25px;
     background-color:  rgb(44, 43, 43);
-    box-shadow: -5px -5px 5px rgba(245, 243, 243, 0.1);
+    -webkit-box-shadow:0 8px 6px -6px black ;
+-moz-box-shadow:0 8px 6px -6px black;
+box-shadow: 0 8px 6px -6px rgb(24, 24, 24);
+    /* box-shadow: -5px -5px 5px rgba(245, 243, 243, 0.1); */
     }
     .box h1{
  
@@ -38,6 +39,7 @@
     }
     .boxes{
      margin-top: 10px;
+     margin-left: 100px;
     display: flex;
     flex-wrap: wrap;
     gap: 3.25rem;
@@ -56,11 +58,12 @@
 }
 @media(max-width:1000px){
   .flexcontainer21{
-    margin-left: 50px;
+    margin-left: 30px;
     margin-top: 50px;
+    margin-bottom: 200px;
   }
   .boxes{
-   
+    margin-left: 50px;
     flex-wrap: wrap;
   }
   .box{
@@ -73,13 +76,13 @@
     right: 0px;
     top: 130px;
   }
+
   
 }
     @media(max-width:440px){
     .flexcontainer21{
-  
+        margin-bottom: 500px;
         margin-left: 50px;
-        margin-top: 0px;
         width: 400px;
       }
       .boxes{

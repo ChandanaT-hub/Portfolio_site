@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "./Content2.module.css";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Footer from "@/components/Footer/page";
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 import { faBookOpen, faWifi } from '@fortawesome/free-solid-svg-icons';
 import { faMessage } from '@fortawesome/free-solid-svg-icons';
@@ -15,7 +16,7 @@ const Contents2 = () => {
           <br></br>
           <br></br>
                 <p><span class={styles.span}>FEATURES</span></p>
-                <h2 class="mb-2 text-3xl"> What I Do</h2>
+                <h2 class="ml-20 mb-2 text-3xl"> What I Do</h2>
                 <br></br>
                 <div className={styles.boxes}>
                 <div className={styles.box}>
@@ -69,9 +70,11 @@ const Contents2 = () => {
                     </p> 
                 </div>
             </div>
+            
+    
+            
             </div>
-  
-  
+            <Footer/>
     </>
   )
 }

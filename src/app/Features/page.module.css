@@ -5,5 +5,30 @@
     width: 40px;
     margin-left:30px;
     margin-top: 15px;
+    color: rgb(182, 34, 98);
+    background-color: bg-slate-500;
     
 }
+
+.skill-container {
+    width: calc(33.33% - 20px); /* Adjust width based on number of items per row */
+    margin-bottom: 20px;
+    background-color: #333; /* Change background color as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .skill-container {
+      width: calc(50% - 20px); /* Adjust width for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .skill-container {
+      width: 100%; /* Adjust width for smaller screens */
+    }
+  }
+  

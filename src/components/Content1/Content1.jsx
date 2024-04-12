@@ -93,13 +93,14 @@ const content1 = () => {
               </div>
             </div>
           </div>
-          <div className={styles.flex}>
+          
+        </div>
+        <div className={styles.flex}>
             <div className={styles.images}>
                 <div className={styles.shape}>
                     <Image src={ProfileImg} alt="profile"></Image>
                 </div>
             </div>
-        </div>
         </div>
       </div>
       <br></br>
