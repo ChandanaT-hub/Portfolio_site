@@ -8,6 +8,12 @@
     height: 500px;
     margin-bottom: 100px;
 }
+.slide1{
+    
+    width: 1000px; 
+    height: 580px; 
+   
+    }
 @media(max-width:900px){
     .container{
         width: full;
@@ -25,7 +31,7 @@
         margin-bottom: 350px;
     }
 }
-@media(max-width:710px){
+@media(max-width:720px){
     .container{
         width: full;
         display: flex;
@@ -35,12 +41,12 @@
     .container div{
         width:250px;
         height: 200px;
-        margin: 5px;
-        margin-left: 30px;
+        margin: 15px;
+        margin-left: 45px;
     }
    
 }
-@media (max-width:570px){
+@media (max-width:620px){
     .container{
         width: full;
         display:block;
@@ -49,13 +55,13 @@
     }
     .container div{
         margin-top: 400px;
-        width:300px;
-        height: 250px;
-        margin: 8px;
-        margin-left: 15px;  
+        width:200px;
+        height: 150px;
+        margin: 15px;
+        margin-left: 45px;  
     }
     .para{
-        margin-top: 540px;
+        margin-top: 220px;
         margin-bottom: 1080px;
     }
   

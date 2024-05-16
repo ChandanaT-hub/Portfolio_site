@@ -5,8 +5,9 @@
     display: flex;
   }
   .con{
-    width: 900px;
-height: 400px;
+    display: flex;
+    width: 850px;
+height: 410px;
  margin-left: 300px;
 margin-right: 300px;
 -webkit-box-shadow:0 8px 6px -6px black ;
@@ -23,6 +24,7 @@ box-shadow: 0 8px 6px -6px rgb(36, 35, 35);
   
   .span{
   color:rgb(182, 34, 98);
+  font-size:48px;
   }
 .c1{
   display: block;
@@ -69,7 +71,7 @@ box-shadow: 0 8px 6px -6px rgb(36, 35, 35);
   background-color: rgb(44, 43, 43);
   display: flex;
   height: 200px;
-  width: 400px;
+  width: 420px;
   }
   .flexcontainer1{
   margin-top: 30px;
@@ -195,9 +197,9 @@ box-shadow: 0 8px 6px -6px rgb(24, 24, 24);
   display: block;
 }
 }
-@media(max-width:1000px){
+@media(max-width:1024px){
   .con{
-    margin-left: 50px;
+    margin-left: 90px;
   }
   .c1{
     display: inline;

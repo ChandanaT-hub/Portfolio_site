@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import styles from "./page.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,22 +15,24 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Navbar from "@/components/Navigation/Navbar";
 import Footer from "@/components/Footer/page";
-
+import { Metadata } from "next";
+export const metadata:Metadata={
+  title:"Skills"
+}
 const Features = () => {
   return (
     <>
-      <Navbar />
-      
-        {/* <div className="mt-5  flex w-[100px] h-[100px] flex-wrap align-middle bg-stone-800"></div> */}
-      <p className="text-5xl text-center mt-5 text-white">MY SKILLS</p>
-      <div className="flex flex-wrap justify-center items-center gap-4 mt-5 mb-[440px] xl:mb-[440px] lg:mb-[540px] md:mb-[550px] sm:mb-[500px]">
+      <Navbar/>
+      <p className="text-5xl text-center mt-10 text-white">MY SKILLS</p>
+      <div className="flex flex-wrap justify-center items-center gap-4 mb-[400px] 
+      xl:mb-[285px] mt-36 lg:mb-[480px] md:mb-[550px] sm:mb-[500px]">
         <div className="skill-container">
-          <FontAwesomeIcon icon={faJs} className={styles.icon} />
-          <p className="ml-3 text-1xl text-white ">Javascript</p>
+          <FontAwesomeIcon icon={faJs} className={styles.icon}/>
+          <p className="ml-5 text-1xl text-white ">Javascript</p>
         </div>
         <div className="skill-container">
           <FontAwesomeIcon icon={faPython} className={styles.icon} />
-          <p className="ml-5 text-1xl text-white ">Python</p>
+          <p className="ml-9 text-1xl text-white ">Python</p>
         </div>
         <div className="skill-container">
           <FontAwesomeIcon icon={faHtml5} className={styles.icon} />
@@ -39,15 +40,15 @@ const Features = () => {
         </div>
         <div className="skill-container">
           <FontAwesomeIcon icon={faCss3Alt} className={styles.icon} />
-          <p className="ml-8 text-1xl text-white">CSS3</p>
+          <p className="ml-11 text-1xl text-white">CSS3</p>
         </div>
         <div className="skill-container">
           <FontAwesomeIcon icon={faReact} className={styles.icon} />
-          <p className="ml-8 text-1xl text-white">React</p>
+          <p className="ml-11 text-1xl text-white">React</p>
         </div>
         <div className="skill-container">
           <FontAwesomeIcon icon={faDatabase} className={styles.icon} />
-          <p className="ml-7 text-1xl text-white">MySQL</p>
+          <p className="ml-10 text-1xl text-white">MySQL</p>
         </div>
         <div className="skill-container">
           <FontAwesomeIcon icon={faCodePullRequest} className={styles.icon} />

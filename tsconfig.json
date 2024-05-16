@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/Blog/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/Blog/page.tsx", "src/app/Blog/Moreinfo/Karinjeshwara/page.jsx", "src/app/Blog/Moreinfo/Gadaikallu/page.jsx", "src/app/Blog/Moreinfo/Skandagiri/page.jsx", "src/app/Resume/page.jsx", "src/app/Resume/page.jsx"],
   "exclude": ["node_modules"]
 }

@@ -8,6 +8,12 @@
     height: 500px;
     margin-bottom: 100px;
 }
+.slide1{
+    
+    width: 1000px; 
+    height: 580px; 
+   
+    }
 @media(max-width:900px){
     .container{
         width: full;
@@ -49,13 +55,13 @@
     }
     .container div{
         margin-top: 400px;
-        width:300px;
-        height: 250px;
-        margin: 8px;
-        margin-left: 15px;  
+        width:250px;
+        height: 200px;
+        margin: 25px;
+        margin-left: 95px;  
     }
     .para{
-        margin-top: 530px;
+        margin-top: 410px;
         margin-bottom: 1080px;
     }
   

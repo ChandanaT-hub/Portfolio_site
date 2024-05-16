@@ -1,19 +1,18 @@
 .icon{
     align-items: center;
     justify-content: center;
-    height: 40px;
-    width: 40px;
+    height: 70px;
+    width: 70px;
     margin-left:30px;
     margin-top: 15px;
     color: rgb(182, 34, 98);
-    background-color: bg-slate-500;
-    
+    background-color: bg-slate-500;    
 }
 
 .skill-container {
-    width: calc(33.33% - 20px); /* Adjust width based on number of items per row */
+    width: calc(33.33% - 20px); 
     margin-bottom: 20px;
-    background-color: #333; /* Change background color as needed */
+    background-color: #333; 
     display: flex;
     align-items: center;
     justify-content: center;

@@ -23,7 +23,7 @@ const content1 = () => {
             <div>
               <p>WELCOME TO MY WORLD</p>
 
-              <h1 class="mb-4 text-4xl">
+              <h1 class="mb-4 text-5xl">
                 Hi,I'm <span className={styles.span}>Chandana T <br></br></span>a
                 Developer.
               </h1>

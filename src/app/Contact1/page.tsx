@@ -4,7 +4,12 @@ import {z,ZodType} from "zod";
 import { useForm } from  "react-hook-form";
 import styles from './page.module.css'
 import { zodResolver } from '@hookform/resolvers/zod';
-
+import Navbar from '@/components/Navigation/Navbar';
+import Footer from '@/components/Footer/page';
+// import { Metadata } from 'next';
+// export const metadata:Metadata={
+//   title:"Contact page"
+// }
 type FormData = {
   FirstName:string;
   LastName:string;
@@ -36,6 +41,7 @@ const Contact1 = () => {
   }
   return (
     <>
+    <Navbar/>
     <div className='w-full h-[750px] align-middle'>
       <p className={styles.heading}>Contact me</p>
       
@@ -63,13 +69,14 @@ const Contact1 = () => {
         <textarea className={styles.input} 
         {...register("Message",{required:true})}  
         placeholder='Enter your message'></textarea><br></br><br></br>
-        {errors.Message && <span className=' ml-[400px]  text-pink-800 text-center'>{errors.Message.message}</span>}<br></br><br></br>
+        {errors.Message && <span className=' ml-[400px]   text-center'>{errors.Message.message}</span>}<br></br><br></br>
 
 
         <button className={styles.btn} >Submit </button>
       </form>
       
     </div>
+    <Footer/>
     </>
   )
 }
